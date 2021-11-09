@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+<head>    
+<script>  
+   var f = document.forms[0];
+
+
+f.addEventListener("submit", function (e) {
+    
+    for (var i=0; i< f.elements.length; i++){
+         console.log(f.elements[i].value);   
+    }
+    e.preventDefault();    
+
+});
+ 
+</script>  
+</head>
+<body>
+<h3>Form onsubmit event </h3>
+
+
+
+<form action="#" id="theForm" name="firstForm">
+    <label for="age">Qualification: </label>
+    <input type="text" name="color" size="8"/><br/>
+    <label for="age">year of passedout: </label>
+    <input type="text" name="color" size="8"/><br/>
+    <button type="submit" name="submit">Submit</button>
+</form>
+
+   </body>
+   </html>
